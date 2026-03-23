@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="tl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SGNHS Graduation & Moving-Up 2026</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --navy: #002147;
+            --gold: #d4af37;
+            --gold-light: #f1e5ac;
+            --white: #ffffff;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: radial-gradient(circle at center, #003366 0%, #001a33 100%);
+            color: var(--white);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Festive Overlay - subtle confetti effect via CSS */
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background-image: url('https://www.transparenttextures.com/patterns/stardust.png');
+            opacity: 0.3;
+            pointer-events: none;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1100px;
+            text-align: center;
+            z-index: 1;
+            padding: 40px 0;
+        }
+
+        header {
+            margin-bottom: 50px;
+        }
+
+        .school-name {
+            font-size: 1.2rem;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: var(--gold-light);
+            margin-bottom: 5px;
+            display: block;
+        }
+
+        header h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            margin: 10px 0;
+            background: linear-gradient(to right, #bf953f, #fcf6ba, #b38728, #fbf5b7, #aa771c);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .theme-box {
+            border-top: 2px solid var(--gold);
+            border-bottom: 2px solid var(--gold);
+            display: inline-block;
+            padding: 15px 30px;
+            margin-top: 20px;
+            max-width: 800px;
+        }
+
+        .theme-text {
+            font-style: italic;
+            font-size: 1.1rem;
+            line-height: 1.6;
+            color: var(--white);
+        }
+
+        .location {
+            display: block;
+            margin-top: 10px;
+            font-size: 0.9rem;
+            color: var(--gold-light);
+        }
+
+        .program-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 25px;
+            margin-top: 50px;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid var(--gold);
+            border-radius: 0; /* Square/Formal look */
+            padding: 40px 20px;
+            text-decoration: none;
+            color: var(--white);
+            transition: all 0.4s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Decorative corners */
+        .card::before {
+            content: "✦";
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            color: var(--gold);
+            font-size: 0.8rem;
+        }
+
+        .card:hover {
+            background: var(--gold);
+            color: var(--navy);
+            transform: scale(1.03);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+
+        .card span {
+            font-size: 0.8rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .card h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.6rem;
+            margin: 0;
+        }
+
+        .card:hover span, .card:hover h2 {
+            color: var(--navy);
+        }
+
+        footer {
+            margin-top: 60px;
+            font-size: 0.85rem;
+            border-top: 1px solid rgba(212, 175, 55, 0.3);
+            padding-top: 20px;
+            color: var(--gold-light);
+        }
+
+        @media (max-width: 768px) {
+            .theme-text { font-size: 0.9rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <span class="school-name">San Guillermo National High School</span>
+            <h1>San Guillermo National High School</h1>
+            <span class="location">San Marcelino, Zambales</span>
+            
+            <div class="theme-box">
+                <p class="theme-text">
+                    "Filipino Graduates: Prepared to Lead with Competence and Character"
+                </p>
+            </div>
+        </header>
+
+        <nav class="program-grid">
+            <a href="https://heyzine.com/flip-book/599447750f.html.html" class="card">
+                <span>Grade 7 & 8</span>
+                <h2>Recognition Ceremony</h2>
+            </a>
+
+            <a href="jhs-moving-up.html" class="card">
+                <span>Grades 9 & 11</span>
+                <h2>Recognition Ceremony</h2>
+            </a>
+
+            <a href="shs-recognition.html" class="card">
+                <span>Junior High School</span>
+                <h2>Moving-Up Exercises</h2>
+            </a>
+
+            <a href="shs-graduation.html" class="card">
+                <span>Senior High School</span>
+                <h2>Commencement Exercises</h2>
+            </a>
+        </nav>
+
+        <footer>
+            &copy; 2026 
+        </footer>
+    </div>
+
+</body>
+</html>
